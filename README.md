@@ -1,8 +1,8 @@
 # LookSAM
 Unofficial Implementation of "Towards Efficient and Scalable Sharpness-Aware Minimization"
 
-# How to use 
-```
+## How to use 
+```python
 ce_loss = nn.CrossEntropyLoss()
 base_optimizer = torch.optim.SGD(model.parameters())
 step_k = 5
