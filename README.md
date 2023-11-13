@@ -1,5 +1,4 @@
-# LookSAM
-Unofficial Implementation of "Towards Efficient and Scalable Sharpness-Aware Minimization"
+
 <h1 align="center"><b>LookSAM Optimizer</b></h1>
 <h3 align="center"><b>Towards Efficient and Scalable Sharpness-Aware Minimization </b></h3>
 <a href="https://arxiv.org/pdf/2203.02714.pdf" a> [Paper, CVPR 2022]</a>   
