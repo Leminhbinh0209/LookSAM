@@ -99,13 +99,13 @@ class LookSAM:
                 self.state[n]["vertical_grad"] = p.grad.data - new_grad_norm * cosine * self.state[n]["old_grad"] / (old_grad_norm + self.perturb_eps)
                 # DO NOTHING with perturbed gradient
         else:
-            old_grad_norm = self._grad_norm(by='old_grad')
+            cur_grad_norm = self._grad_norm()
             v_grad_norm  = self._grad_norm(by='vertical_grad')
 
             for n, p in self.model.named_parameters():
                 if p.grad is None:
                     continue
-                p.grad = self.state[n]["old_grad"]  + self.alpha * old_grad_norm / (v_grad_norm + self.perturb_eps) *  self.state[n]["vertical_grad"]
+                p.grad.data.add_(cur_grad_norm / (v_grad_norm + self.perturb_eps) *  self.state[n]["vertical_grad"], alpha=self.alpha)
 
     @torch.no_grad()
     def descent_step(self):
