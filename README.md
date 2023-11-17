@@ -1,6 +1,7 @@
 
 <h1 align="center"><b>LookSAM Optimizer</b></h1>
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Leminhbinh0209/LookSAM?style=for-the-badge" height="25"  onmouseover="this.height='60'" onmouseout="this.height='25'" ><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Leminhbinh0209/LookSAM?style=for-the-badge" height="25"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Leminhbinh0209/LookSAM?style=for-the-badge" height="25">
+</br>
 <h3 align="center"><b>Towards Efficient and Scalable Sharpness-Aware Minimization </b></h3>
 <a href="https://arxiv.org/pdf/2203.02714.pdf" a> [Paper, CVPR 2022]</a>   
 
